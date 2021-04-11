@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;')
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+html{
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+body{
+	position: relative;
+}
+
+#navbarNav > div > li:nth-child(n) > a{
+	color: #fff;
+	font-size: 1.1rem;
+	padding: 0 0.8rem;
+}
+
+#navbarNav > div > li:nth-child(n) > a:hover{
+	color: #009f93;
+}
+
+
+#navbarNav > div > li:nth-child(n) > a:active{
+	color: yellow;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link{
+	color: yellow;
+}
+
+.navbar{
+	background-color: #000000;
+	padding: 1rem 5rem;
+	z-index: 1000;
+}
+
+.nav-item{
+	align-items: right;
+	text-transform: uppercase;
+	font-size: 95%;
+	letter-spacing: 1px;
+	font-family: 'Kiwi Maru', serif;
+}
+
+.mid{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	position: relative;
+}
+
+.mid img{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	object-fit: cover;
+	opacity: 0.7;
+}
+
+.hero{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hero h2{
+	font-weight: bold;
+	color: #000000;
+	font-family: 'Kiwi Maru', serif;
+}
+
+.hero p{
+	font-size: 1.3rem;
+	font-family: 'New Tegomin', serif;
+	font-weight: bold;
+	letter-spacing: 0.2px;
+	padding: 1rem;
+}
+
+.hero a{
+	font-family: 'New Tegomin', serif;
+	background: #009f93;
+	font-weight: 600;
+	padding: 0.5rem 1.4rem;
+	border-radius: 30px;
+	font-size: 1.1rem;
+	color: #FFF;
+	text-decoration: none;
+
+}
+
+.hero a:hover{
+	background: #72efdd;
+
+}
+
+.gallery{
+	width: 100%;
+	min-height: 82vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: auto;
+	background-color: #000000;
+	color: #FFF;
+}
+
+
+.col{
+	align-items: center;
+}
+
+.gallery .one{
+	background: #FFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+	padding: 1rem 2rem;
+	border-radius: 7px;
+}
+
+
+.heading{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.heading h2{
+	font-weight: bold;
+	color: #FFF;
+	font-family: 'Kiwi Maru', serif;
+}
+
+.col .row{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+}
+
+.row .one{
+	display: flex;
+}
+
+.one img{
+	width: 75%;
+}
+
+.about{
+	width: 100%;
+	min-height: 82vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	margin: auto;
+	background-color: #FFF;
+}
+
+.about .row{
+	display: flex;
+}
+
+.text{
+ 	padding-right: 10px;
+ }
+
+ .img{
+ 	padding-left: 10px;
+ }
+
+.text h6{
+	color: #009f93;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	margin-right: 10px;
+}
+
+.text h2{
+	color: #000;
+	font-family: 'Kiwi Maru', serif;
+	font-weight: 700;
+	font-size: 2.7rem;
+	margin-right: 10px;
+}
+
+.text p{
+	color: #000;
+	font-family: 'Kiwi Maru', serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+	margin-right: 10px;
+
+}
+
+.text a{
+	color: #FFF;
+	background: #009f93;
+	font-weight: 600;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+}
+
+.contact
+{
+	align-content: center;
+	align-items: center;
+	min-height: 84vh;
+	margin: auto;
+	background-color: #000;
+}
+.contact h2
+{
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	font-family: 'Kiwi Maru', serif;
+}
+.border
+{
+	width: 100px;
+	height: 10px;
+	background: #009f93;
+	margin: 20px auto;
+	font-size: 30px;
+}
+.contact-form
+{
+	max-width: 600px;
+	padding: 0 10px;
+	margin: auto;
+	overflow: hidden;
+	
+}
+
+input[type=text], input[type=email]
+{
+	width: 100%;
+	font-size: 15px;
+	font-family: 'Kiwi Maru', serif;
+	box-sizing: border-box;
+	padding: 12px 5px;
+	background: rgba(0,0,0,0.8);
+	outline: none;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+
+.contact-form-text
+ {
+ 	display: block;
+ 	width: 100%;
+ 	box-sizing: border-box;
+ 	margin: 16px 0;
+ 	border: 0;
+	background: rgba(0,0,0,0.1);
+	padding: 12px 5px;
+	outline: none;
+ 	font-size: 15px;
+	font-family: 'Kiwi Maru', serif;
+	color: white;
+ }
+
+.contact-form-text:focus
+{
+	box-shadow: 0 0 10px 4px #ffeaa7;
+}
+
+textarea.contact-form-text
+{
+	resize: none;
+	height: 120px;
+	background: rgba(0,0,0,0.6);
+}
+
+
+.contact-form-btn
+{
+	float: right;
+	width:100%;
+	box-sizing: border-box; 
+	padding: 5px 0;
+	margin-top: 15px;
+	outline: none;
+	border: 0;
+	opacity: 0.8;
+	border-radius: 20px;
+	font-size: 20px;
+	color: #FFF;
+	background: #009f93;
+	font-family: 'Kiwi Maru', serif;
+
+}
+
+footer{
+	background-color: #009f93;
+}
+
+.ft{
+	color: #FFF;
+	font-family: 'Kiwi Maru', serif;
+	font-size: 60%;
+	padding: 20px;
+	margin-bottom: 0;
+	padding-bottom: 10;
+	align-items: center;
+}
+
+.ft2{
+	font-size: 150%;
+	color: #FFF;
+	font-family: 'Kiwi Maru', serif;
+	padding: 20px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-weight: bold;
+
+}
