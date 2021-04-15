@@ -17,38 +17,40 @@ body{
 	position: relative;
 }
 
-#navbarNav > div > li:nth-child(n) > a{
+/*#navbarNav > ul > div > li:nth-child(n) > a{
 	color: #fff;
-	font-size: 1.1rem;
 	padding: 0 0.8rem;
-}
+	text-decoration: none;
+}*/
 
-#navbarNav > div > li:nth-child(n) > a:hover{
+/*#navbarNav > ul > div > li:nth-child(n) > a:hover
+{
 	color: #009f93;
-}
+}*/
 
-
-#navbarNav > div > li:nth-child(n) > a:active{
-	color: yellow;
-}
-
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show>.nav-link{
-	color: yellow;
-}
+/*#navbarNav > ul > div > li:nth-child(n) > a:active{
+	color:#009f93;
+}*/
 
 .navbar{
-	background-color: #000000;
+	background-color: #000;
 	padding: 1rem 5rem;
 	z-index: 1000;
 }
 
+  .custom-nav .navbar-nav li a:hover,
+    .custom-nav .navbar-nav li a:active,
+    .custom-nav .navbar-nav li.active a {
+        color: #72efdd !important;
+        border: 1px;
+    }
+
+
 .nav-item{
+	color: #FFF;
 	align-items: right;
 	text-transform: uppercase;
-	font-size: 95%;
+	font-size: 100%;
 	letter-spacing: 1px;
 	font-family: 'Kiwi Maru', serif;
 }
@@ -108,6 +110,7 @@ body{
 
 .hero a:hover{
 	background: #72efdd;
+	text-decoration: none;
 
 }
 
@@ -296,7 +299,7 @@ input[type=text], input[type=email]
 
 .contact-form-text:focus
 {
-	box-shadow: 0 0 10px 4px #ffeaa7;
+	box-shadow: 0 0 10px 4px #fff;
 }
 
 textarea.contact-form-text
@@ -347,5 +350,4 @@ footer{
 	margin-bottom: 0;
 	padding-bottom: 0;
 	font-weight: bold;
-
 }
